@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        boolean boolean_login = true;
 
         // SharedPreferences로 최초 실행 여부 확인
         SharedPreferences prefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
@@ -27,8 +28,13 @@ public class MainActivity extends AppCompatActivity {
             editor.putBoolean("isFirstRun", false);
             editor.apply();
         } else {
-            // 👉 이후 실행: main_page.xml 띄우기
-            setContentView(R.layout.main_page);
+            if(boolean_login){
+                // 👉 이후 실행: main_page.xml 띄우기, 로그인 되있으면
+                setContentView(R.layout.main_page);
+            }else{
+                //로그인 안 되어있으면 activity_main.xml 띄우기
+                setContentView(R.layout.activity_main);
+            }
         }
 
         // 시스템 인셋 처리 (공통)
