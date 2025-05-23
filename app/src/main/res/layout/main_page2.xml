@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPage">
+    tools:context=".MainPage2Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/topAppBar"
@@ -30,7 +30,7 @@
                 android:id="@+id/toolBarTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="치매노인 버전"
+                android:text="독거노인 버전"
                 android:textcolor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -42,6 +42,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
+
     <ImageView
         android:id="@+id/myImageView"
         android:layout_width="40dp"
@@ -49,7 +50,7 @@
         android:contentDescription="CO"
         android:src="@drawable/img"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="126dp" />
+        tools:layout_editor_absoluteY="201dp" />
 
     <TextView
         android:id="@+id/text"
@@ -60,8 +61,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="136dp" />
-
+        tools:layout_editor_absoluteY="211dp" />
 
     <ImageView
         android:id="@+id/myImageView"
@@ -70,7 +70,7 @@
         android:contentDescription="HR"
         android:src="@drawable/img_1"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="281dp" />
+        tools:layout_editor_absoluteY="418dp" />
 
     <TextView
         android:id="@+id/text2"
@@ -81,47 +81,20 @@
         android:textSize="20sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="291dp" />
+        tools:layout_editor_absoluteY="428dp" />
 
     <TextView
         android:id="@+id/fill"
         android:layout_width="320dp"
         android:layout_height="70dp"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="184dp" />
+        tools:layout_editor_absoluteY="277dp" />
 
     <TextView
         android:id="@+id/fill"
         android:layout_width="320dp"
         android:layout_height="70dp"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="342dp" />
-
-    <ImageView
-        android:id="@+id/myImageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/free_icon_font_land_layer_location_13727433"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="437dp" />
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="위치"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="447dp" />
-
-    <TextView
-        android:id="@+id/location"
-        android:layout_width="320dp"
-        android:layout_height="180dp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="493dp" />
-
+        tools:layout_editor_absoluteY="492dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
