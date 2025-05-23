@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFDE7"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- 상단 툴바 -->
+    <!-- 툴바 -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
@@ -65,15 +66,32 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
+    <!-- 제목 -->
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CCV"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#FF7043"
+        android:fontFamily="@font/poetsenone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:letterSpacing="0.05"
+        android:shadowColor="#33000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
     <!-- 로그인 폼 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical"
         android:padding="32dp"
-        android:layout_gravity="center"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="80dp">
+        android:gravity="top|center_horizontal">
 
         <EditText
             android:id="@+id/et_id"
@@ -127,4 +145,4 @@
                 android:textColor="#FF7043"/>
         </LinearLayout>
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>
