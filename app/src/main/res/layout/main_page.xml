@@ -99,7 +99,7 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="323dp" />
-    ,
+
 
     <EditText
         android:layout_width="320dp"
@@ -114,3 +114,4 @@
         android:src="@drawable/img_2"
         tools:layout_editor_absoluteX="349dp"
         tools:layout_editor_absoluteY="269dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
