@@ -8,6 +8,7 @@
     android:background="#FFFDE7"
     tools:context=".MainActivity">
 
+    <!-- 상단 툴바 -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
@@ -41,7 +42,7 @@
                 android:id="@+id/toolbarTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CCV"
+                android:text="로그인"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -63,10 +64,67 @@
                 app:layout_constraintBottom_toBottomOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
-    <TextView
+
+    <!-- 로그인 폼 -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="안녕하세요"/>
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp">
 
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이디를 입력하세요."
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"/>
 
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호를 입력하세요."
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:backgroundTint="#FF7043"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:textColor="#FF7043"
+                android:paddingEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_find_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 찾기"
+                android:textColor="#FF7043"/>
+        </LinearLayout>
+    </LinearLayout>
 </FrameLayout>
