@@ -9,7 +9,6 @@
     android:orientation="vertical"
     tools:context=".MainPage">
 
-    <!-- 툴바 -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
@@ -28,12 +27,23 @@
             android:paddingHorizontal="16dp"
             android:paddingVertical="12dp">
 
+            <ImageView
+                android:id="@+id/ivMyPage"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="마이페이지"
+                android:src="@drawable/home_24px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
             <TextView
                 android:id="@+id/toolbarTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poetsenone"
-                android:text="치매노인 버전"
+                android:text="치매 노인 버전"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -41,6 +51,17 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivSettings"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="설정"
+                android:src="@drawable/settings_24px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="#FFFFFF" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
@@ -78,6 +99,7 @@
             android:id="@+id/fill_co"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:background="@drawable/edittext_background"
             android:layout_marginTop="8dp" />
 
         <!-- 심박수 -->
@@ -108,6 +130,7 @@
             android:id="@+id/fill_hr"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:background="@drawable/edittext_background"
             android:layout_marginTop="8dp" />
 
         <!-- 위치 -->
@@ -138,6 +161,7 @@
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="180dp"
+            android:background="@drawable/edittext_background"
             android:layout_marginTop="8dp" />
 
     </LinearLayout>

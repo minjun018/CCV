@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ccvapp.iml" filepath="$PROJECT_DIR$/.idea/modules/ccvapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ccvapp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ccvapp.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ccvapp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ccvapp.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ccvapp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ccvapp.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ccvapp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ccvapp.app.unitTest.iml" />
