@@ -102,8 +102,8 @@
     ,
 
     <EditText
-        android:layout_width="320"
-        android:layout_height="70"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
         tools:layout_editor_absoluteX="22dp"
         tools:layout_editor_absoluteY="229dp" />
 
@@ -112,7 +112,6 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/img_2"
-        android:tint="#5D5656"
         tools:layout_editor_absoluteX="349dp"
         tools:layout_editor_absoluteY="269dp" />
 
