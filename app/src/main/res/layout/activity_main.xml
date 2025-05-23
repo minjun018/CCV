@@ -148,7 +148,7 @@
             <TextView
                 android:id="@+id/tv_signup"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:paddingEnd="16dp"
                 android:text="회원가입"
                 android:textColor="#FF7043" />

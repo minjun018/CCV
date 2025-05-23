@@ -8,17 +8,26 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
+
+    private FirebaseAuth mAuth;  // ← 선언
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         boolean boolean_login = false;
+        mAuth = FirebaseAuth.getInstance();  // ← 초기화
 
         SharedPreferences prefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
         boolean isFirstRun = prefs.getBoolean("isFirstRun", true);
@@ -40,21 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.activity_main);
             }
         }
-
-        // ❗ setContentView 이후에 호출해야 함
-        View btn_login = findViewById(R.id.btn_login);
-
-        if (btn_login != null) {
-            btn_login.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(MainActivity.this, MainPage.class);
-                    startActivity(intent);
-                }
-            });
-        } else {
-            Log.e("MainActivity", "btn_login is null. Check if the correct layout is loaded.");
-        }
+        EditText etId = findViewById(R.id.et_id);
         EditText etPassword = findViewById(R.id.et_password);
         TextView tvTogglePassword = findViewById(R.id.tv_toggle_password);
 
@@ -79,10 +74,38 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // ❗ setContentView 이후에 호출해야 함
+        View btn_login = findViewById(R.id.btn_login);
+
+        if (btn_login != null) {
+            btn_login.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String email = etId.getText().toString();
+                    String password = etPassword.getText().toString();
+
+                    mAuth.signInWithEmailAndPassword(email, password)
+                            .addOnCompleteListener(MainActivity.this, task -> {
+                                if (task.isSuccessful()) {
+                                    FirebaseUser user = mAuth.getCurrentUser();
+                                    Intent intent = new Intent(MainActivity.this, MainPage.class);
+                                    startActivity(intent);
+                                } else {
+                                    Toast.makeText(MainActivity.this, "로그인 실패: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                }
+                            });
+
+                }
+            });
+        } else {
+            Log.e("MainActivity", "btn_login is null. Check if the correct layout is loaded.");
+        }
+
+
         // 인셋 설정
         View mainView = findViewById(R.id.main);
         if (mainView != null) {
-            EdgeToEdge.enable(this);
+            EdgeToEdge.enable(MainActivity.this);
             ViewCompat.setOnApplyWindowInsetsListener(mainView, (v, insets) -> {
                 Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
                 v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
