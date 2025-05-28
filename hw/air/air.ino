@@ -13,12 +13,12 @@ void loop() {
   // put your main code here, to run repeatedly:
   float value = get_ppm();
 
-  led_blinking();
+  void led_blinking();
   if (value > level_warning)
   {
     Serial.println("ALERT");
   }
-  
+  Serial.println(value);
   delay(1000);
 }
 
