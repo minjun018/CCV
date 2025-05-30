@@ -57,7 +57,7 @@
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="4"
-        android:text="CCV"
+        android:text="Care-IT"
         android:textColor="#FF7043"
         android:textSize="36sp"
         android:textStyle="bold" />

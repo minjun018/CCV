@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE7"
+    tools:context=".AccountpageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF7043"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poetsenone"
+                android:text="회원가입"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poetsenone"
+        android:text="계정 생성하기"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="382dp" />
+
+    <EditText
+        android:id="@+id/new_id"
+        android:layout_width="351dp"
+        android:layout_height="39dp"
+        android:background="@drawable/edittext_background"
+        android:hint="새로운 계정의 아이디를 입력하세요"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <EditText
+        android:id="@+id/new_password"
+        android:layout_width="351dp"
+        android:layout_height="39dp"
+        android:background="@drawable/edittext_background"
+        android:hint="새로운 계정의 비밀번호를 입력하세요"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="498dp" />
+
+    <EditText
+        android:id="@+id/new_password"
+        android:layout_width="351dp"
+        android:layout_height="39dp"
+        android:background="@drawable/edittext_background"
+        android:hint="비밀번호를 다시 입력하세요"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <TextView
+        android:id="@+id/tv_toggle_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="4dp"
+        android:text="클릭하여 비밀번호 보기"
+        android:textColor="#888888"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="537dp" />
+
+    <TextView
+        android:id="@+id/tv_toggle_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="4dp"
+        android:text="클릭하여 비밀번호 보기"
+        android:textColor="#888888"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="622dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poetsenone"
+        android:text="이전 화면으로 돌아가기"
+        android:textColor="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="670dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poetsenone"
+        android:text="정보 입력하기"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="351dp"
+        android:layout_height="39dp"
+        android:background="@drawable/edittext_background"
+        android:hint="이름을 입력하세요"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poetsenone"
+        android:text="치매 여부"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <EditText
+        android:id="@+id/new_phonenumber"
+        android:layout_width="351dp"
+        android:layout_height="39dp"
+        android:background="@drawable/edittext_background"
+        android:hint="전화번호를 입력하세요"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#FF7034"
+        android:fontFamily="@font/poetsenone"
+        android:text="유"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#FF7034"
+        android:fontFamily="@font/poetsenone"
+        android:text="무"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <TextView
+        android:id="@+id/tv_toggle_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="4dp"
+        android:text="인증하기"
+        android:textColor="#888888"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="325dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
