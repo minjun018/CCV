@@ -9,6 +9,7 @@
     android:orientation="vertical"
     tools:context=".MainPage2">
 
+    <!-- 상단 툴바 -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
@@ -43,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poetsenone"
-                android:text="일반 노인 버전"
+                android:text="노인용 버전"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -74,22 +75,20 @@
 
         <!-- 일산화탄소 -->
         <LinearLayout
-            android:id="@id/co_layout"
+            android:id="@+id/co_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
 
             <ImageView
-                android:id="@+id/iv_co"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="CO"
-                android:src="@drawable/img" />
+                android:src="@drawable/img"
+                android:contentDescription="CO" />
 
             <TextView
-                android:id="@+id/tv_co_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -112,19 +111,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:gravity="center_vertical"
             android:layout_marginTop="24dp"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_vertical">
+            android:layout_marginBottom="12dp">
 
             <ImageView
-                android:id="@+id/iv_hr"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="HR"
-                android:src="@drawable/img_1" />
+                android:src="@drawable/img_1"
+                android:contentDescription="HR" />
 
             <TextView
-                android:id="@+id/tv_hr_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -140,5 +137,8 @@
             android:layout_height="70dp"
             android:background="@drawable/edittext_background"
             android:padding="12dp" />
+
+        <!-- 위치 (선택 사항) -->
+
     </LinearLayout>
 </LinearLayout>

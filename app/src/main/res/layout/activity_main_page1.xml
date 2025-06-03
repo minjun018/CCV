@@ -65,12 +65,12 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <!-- 센서 정보 -->
+    <!-- 센서 정보 영역만 발췌 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="24dp">
 
         <!-- CO -->
         <LinearLayout
@@ -78,7 +78,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
 
             <ImageView
                 android:layout_width="40dp"
@@ -101,7 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:background="@drawable/edittext_background"
-            android:layout_marginTop="8dp" />
+            android:padding="12dp" />
 
         <!-- 심박수 -->
         <LinearLayout
@@ -109,6 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
@@ -133,14 +135,16 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:background="@drawable/edittext_background"
-            android:layout_marginTop="8dp"
+            android:padding="12dp"
             android:textColor="@color/black"/>
+
         <!-- 위치 -->
         <LinearLayout
             android:id="@+id/location_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
@@ -164,9 +168,10 @@
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="180dp"
+            android:text="Lat : 36.23   Lon : 127.19"
             android:background="@drawable/edittext_background"
-            android:layout_marginTop="8dp" />
-
+            android:padding="12dp" />
     </LinearLayout>
+
 
 </LinearLayout>

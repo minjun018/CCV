@@ -42,206 +42,205 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/title_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poetsenone"
-        android:text="정보 입력하기"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/topAppBar"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="28dp" />
+        <TextView
+            android:id="@+id/title_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poetsenone"
+            android:text="정보 입력하기"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/topAppBar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="28dp" />
 
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:background="@drawable/edittext_background"
-        android:hint="이름을 입력하세요"
-        android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@id/title_info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:background="@drawable/edittext_background"
+            android:hint="이름을 입력하세요"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/title_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"/>
 
-    <EditText
-        android:id="@+id/new_phonenumber"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:background="@drawable/edittext_background"
-        android:hint="전화번호를 입력하세요"
-        android:inputType="phone"
-        app:layout_constraintTop_toBottomOf="@id/name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
-        android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/new_phonenumber"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:background="@drawable/edittext_background"
+            android:hint="전화번호를 입력하세요"
+            android:inputType="phone"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:textColor="@color/black"/>
 
-    <TextView
-        android:id="@+id/btn_verify"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="인증하기"
-        android:textColor="#888888"
-        android:textSize="13sp"
-        app:layout_constraintTop_toBottomOf="@id/new_phonenumber"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="28dp" />
+        <TextView
+            android:id="@+id/btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인증하기"
+            android:textColor="#888888"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/new_phonenumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="28dp" />
 
-    <TextView
-        android:id="@+id/title_dementia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poetsenone"
-        android:text="치매 여부"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/btn_verify"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="30dp"/>
+        <TextView
+            android:id="@+id/title_dementia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poetsenone"
+            android:text="치매 여부"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btn_verify"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="30dp"/>
 
-    <androidx.appcompat.widget.AppCompatSpinner
-        android:id="@+id/dementia_buttons"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:background="@drawable/spinner_background"
-        android:paddingHorizontal="12dp"
-        android:dropDownVerticalOffset="8dp"
-        app:layout_constraintTop_toBottomOf="@id/title_dementia"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/dementia_buttons"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_background"
+            android:paddingHorizontal="12dp"
+            android:dropDownVerticalOffset="8dp"
+            app:layout_constraintTop_toBottomOf="@id/title_dementia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"/>
 
-    <!-- 아래 계정 생성 영역 등은 그대로 유지 -->
-    <TextView
-        android:id="@+id/title_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poetsenone"
-        android:text="계정 생성하기"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/dementia_buttons"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="28dp"/>
+        <!-- 아래 계정 생성 영역 등은 그대로 유지 -->
+        <TextView
+            android:id="@+id/title_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poetsenone"
+            android:text="계정 생성하기"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/dementia_buttons"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="28dp"/>
 
-    <!-- 이하 생략 (new_id, new_password, 비밀번호 보기 등) -->
-    <EditText
-        android:id="@+id/new_id"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:background="@drawable/edittext_background"
-        android:hint="새로운 계정의 이메일을 입력하세요"
-        android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@id/title_account"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/black"/>
-    <EditText
-        android:id="@+id/new_password"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:background="@drawable/edittext_background"
-        android:hint="새로운 계정의 비밀번호를 입력하세요"
-        android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/new_id"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
-        android:textColor="@color/black"/>
+        <!-- 이하 생략 (new_id, new_password, 비밀번호 보기 등) -->
+        <EditText
+            android:id="@+id/new_id"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:background="@drawable/edittext_background"
+            android:hint="새로운 계정의 이메일을 입력하세요"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/title_account"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/new_password"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:background="@drawable/edittext_background"
+            android:hint="새로운 계정의 비밀번호를 입력하세요"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/new_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:textColor="@color/black"/>
 
-    <TextView
-        android:id="@+id/tv_toggle_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="클릭하여 비밀번호 보기"
-        android:textColor="#888888"
-        android:textSize="13sp"
-        android:clickable="true"
-        android:focusable="true"
-        app:layout_constraintTop_toBottomOf="@id/new_password"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="28dp"/>
+        <TextView
+            android:id="@+id/tv_toggle_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="클릭하여 비밀번호 보기"
+            android:textColor="#888888"
+            android:textSize="13sp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/new_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="28dp"/>
 
-    <EditText
-        android:id="@+id/confirm_password"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:background="@drawable/edittext_background"
-        android:hint="비밀번호를 다시 입력하세요"
-        android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/tv_toggle_password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
-        android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:background="@drawable/edittext_background"
+            android:hint="비밀번호를 다시 입력하세요"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/tv_toggle_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:textColor="@color/black"/>
 
-    <TextView
-        android:id="@+id/tv_toggle_confirm_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="클릭하여 비밀번호 보기"
-        android:textColor="#888888"
-        android:textSize="13sp"
-        android:clickable="true"
-        android:focusable="true"
-        app:layout_constraintTop_toBottomOf="@id/confirm_password"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="28dp"/>
+        <TextView
+            android:id="@+id/tv_toggle_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="클릭하여 비밀번호 보기"
+            android:textColor="#888888"
+            android:textSize="13sp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/confirm_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="28dp"/>
 
-    <TextView
-        android:id="@+id/go_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/poetsenone"
-        android:text="이전 화면으로 돌아가기"
-        android:textColor="@android:color/darker_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+        <TextView
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poetsenone"
+            android:text="이전 화면으로 돌아가기"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
 
-    <Button
-        android:id="@+id/btn_signup"
-        android:layout_width="0dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
-        android:backgroundTint="#FF7043"
-        android:paddingVertical="12dp"
-        android:text="회원가입"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/tv_toggle_confirm_password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="#FF7043"
+            android:paddingVertical="12dp"
+            android:text="회원가입"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_toggle_confirm_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

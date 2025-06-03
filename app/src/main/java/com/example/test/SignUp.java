@@ -218,20 +218,18 @@ public class SignUp extends AppCompatActivity {
 
                                                         // TODO: Firestore 저장 성공 후 다음 화면으로 이동
                                                         // 저장된 Map에서 "condition" 값을 다시 가져와서 비교
-                                                        String conditionValue = (String) userData.get("condition"); // Object 타입을 String으로 캐스팅
+                                                        String conditionValue = (String) userData.get("condition");
 
-                                                        if("유".equals(conditionValue)){ // 문자열 비교는 반드시 .equals() 사용!
-                                                            Intent intent = new Intent(SignUp.this, SafeLocation.class); // SafeLocation으로 이동
+                                                        if("dementia".equals(conditionValue)) {
+                                                            Intent intent = new Intent(SignUp.this, SafeLocation.class);
                                                             startActivity(intent);
-                                                            finish(); // 현재 액티비티 종료
-                                                        } else if("무".equals(conditionValue)){ // 문자열 비교는 반드시 .equals() 사용!
-                                                            Intent intent = new Intent(SignUp.this, MainPage2.class); // MainPage2로 이동
+                                                            finish();
+                                                        } else if("just".equals(conditionValue)) {
+                                                            Intent intent = new Intent(SignUp.this, MainPage2.class);
                                                             startActivity(intent);
-                                                            finish(); // 현재 액티비티 종료
+                                                            finish();
                                                         } else {
-                                                            // 예기치 않은 값이거나 "선택하세요" 상태일 경우 (유효성 검사에서 이미 걸렀지만 혹시 몰라서)
                                                             Log.w(TAG, "Unexpected condition value: " + conditionValue);
-                                                            // 기본적으로 메인 화면 등으로 이동하도록 처리할 수 있습니다.
                                                             Intent intent = new Intent(SignUp.this, MainActivity.class);
                                                             startActivity(intent);
                                                             finish();
